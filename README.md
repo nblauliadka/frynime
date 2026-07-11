@@ -71,5 +71,3 @@ To run this project locally, follow these steps:
 ## 📝 License
 
 Distributed under the MIT License. Feel free to fork and explore!
-
-```
