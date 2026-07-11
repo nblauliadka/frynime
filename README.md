@@ -1,8 +1,3 @@
-Boss, that README was looking like a wall of text that would make a senior dev cry. Total chaotic energy. I gave it a proper glow-up—fixed those busted code blocks, added some much-needed breathing room with line breaks, and threw in some dividers to keep it looking crisp and professional.
-
-Here is the clean, copy-paste-ready version:
-
-```markdown
 # 📺 Frynime
 
 > A high-performance, cinematic anime indexing and streaming platform built with modern web technologies.
