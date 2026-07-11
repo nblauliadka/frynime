@@ -7,6 +7,7 @@ import { AnimeCard } from '@/components/AnimeCard';
 import { Pagination } from '@/components/Pagination';
 import { HorizontalScroller } from '@/components/HorizontalScroller';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Play, Star } from 'lucide-react';
 
 export default async function HomePage(props: { searchParams?: Promise<{ [key: string]: string | string[] | undefined }> }) {
@@ -87,10 +88,13 @@ export default async function HomePage(props: { searchParams?: Promise<{ [key: s
               {heroPoster && (
                 <div className="absolute inset-0 z-0">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img 
+                  <Image 
                     src={heroPoster} 
                     alt={heroTitle}
-                    className="w-full h-full object-cover object-center scale-105 group-hover:scale-110 transition-transform duration-[10000ms] ease-out opacity-35 md:opacity-45"
+                    fill
+                    priority
+                    sizes="100vw"
+                    className="object-cover object-center scale-105 group-hover:scale-110 transition-transform duration-[10000ms] ease-out opacity-35 md:opacity-45"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/40 to-transparent" />
                   <div className="absolute inset-0 bg-gradient-to-r from-zinc-950 via-zinc-950/20 to-transparent" />

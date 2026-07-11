@@ -3,7 +3,6 @@ import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { Navbar } from '@/components/Navbar';
 import { Inter } from 'next/font/google';
-import { SwipeWrapper } from '@/components/SwipeWrapper';
 import { Footer } from '@/components/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -22,9 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <Navbar />
             <div className="flex-1 flex flex-col md:pl-64 pt-16 md:pt-0 pb-20 md:pb-0 min-w-0">
               <main className="flex-grow w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col">
-                <SwipeWrapper>
-                  {children}
-                </SwipeWrapper>
+                {children}
               </main>
               <Footer />
             </div>
